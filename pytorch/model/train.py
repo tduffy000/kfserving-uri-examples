@@ -27,7 +27,7 @@ def train(X, y, epochs=10, batch_size=16):
     return model
 
 def freeze(model, path='../frozen'):
-    torch.save(model, f'{path}/model.pt')
+    torch.save(model.state_dict(), f'{path}/model.pt')
 
 if __name__ == '__main__':
     iris = datasets.load_iris()
