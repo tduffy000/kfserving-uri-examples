@@ -3,7 +3,7 @@ import torch.nn.functional as F
 
 class IrisNet(torch.nn.Module):
 
-    def __init__(self, input_dim, num_classes=3):
+    def __init__(self, input_dim=4, num_classes=3):
         super(IrisNet, self).__init__()
         self.model = torch.nn.Sequential(
             torch.nn.Linear(input_dim, 16),

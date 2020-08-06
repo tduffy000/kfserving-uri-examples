@@ -8,7 +8,7 @@ def train(X, y, epochs=10, batch_size=16):
     dataset = IrisDataset(X, y)
     num_examples = len(dataset)
     loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True)
-
+    print(X.shape[1])
     model = IrisNet(input_dim=X.shape[1])
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
     criterion = torch.nn.CrossEntropyLoss()
