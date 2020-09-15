@@ -4,7 +4,7 @@ The [kfserving](https://github.com/kubeflow/kfserving) project provides a server
 In order to allow for easier testing, learning, and proof-of-concept (PoC) work, the ability to define a generic URI was added in this [PR](https://github.com/kubeflow/kfserving/pull/979). This repo provides examples of defining (very minimal) models  in various frameworks and their frozen representations, along with the Custom Resource Definition (CRD) to apply them to an existing Kubernetes cluster with kfserving running.
 
 ### Example
-The easiest model example is likely that of [Scikit-Learn](https://scikit-learn.org/stable/index.html) which most students and professionals are familiar with. In [`./sklearn/model/train.py](./sklearn/model/train.py), we specify a sample Iris dataset model to predict flowers, 
+The easiest model example is likely that of [Scikit-Learn](https://scikit-learn.org/stable/index.html) which most students and professionals are familiar with. In [`./sklearn/model/train.py`](./sklearn/model/train.py), we specify a sample Iris dataset model to predict flowers, 
 ```python
 from sklearn import svm
 from sklearn import datasets
