@@ -1,7 +1,7 @@
 apiVersion: serving.kubeflow.org/v1alpha2
 kind: InferenceService
 metadata:
-  name: tensorflow-from-uri
+  name: tensorflow-iris-from-uri
 spec:
   default:
     predictor:

@@ -1,7 +1,7 @@
 apiVersion: serving.kubeflow.org/v1alpha2
 kind: InferenceService
 metadata:
-  name: pytorch-from-uri
+  name: pytorch-iris-from-uri
 spec:
   default:
     predictor:
